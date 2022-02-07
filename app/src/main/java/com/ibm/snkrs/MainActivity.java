@@ -12,13 +12,34 @@ import android.widget.Toast;
 
 import com.ibm.snkrs.activity.activity.CalendarActivity;
 import com.ibm.snkrs.activityFeed.FeedActivity;
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
 
 public class MainActivity extends AppCompatActivity {
+
+    SliderView sliderView;
+    int[] images = {
+            R.drawable.slider3,
+            R.drawable.slider1,
+            R.drawable.jordanmocha,
+            R.drawable.slider2};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        sliderView = findViewById(R.id.image_slider);
+
+        SliderAdapter sliderAdapter = new SliderAdapter(images);
+
+        sliderView.setSliderAdapter(sliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
+        sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
+        sliderView.startAutoCycle();
+
     }
 
 

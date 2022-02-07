@@ -58,16 +58,31 @@ public class CalendarActivity extends AppCompatActivity {
         calendario = new Calendario("Nike Air Max 90 Siempre Familia", "15", "fev/22", R.drawable.imagem2);
         this.listaCalendario.add( calendario );
 
-        calendario = new Calendario("NBA x Nike Dunk Low Chicago", "8", "fev/22", R.drawable.imagem3);
+        calendario = new Calendario("NBA x Nike Dunk Low Chicago", "17", "fev/22", R.drawable.imagem3);
         this.listaCalendario.add( calendario );
 
-        calendario = new Calendario("Tênis legal", "8", "fev/22", R.drawable.image4);
+        calendario = new Calendario("Tênis legal", "18", "fev/22", R.drawable.image4);
         this.listaCalendario.add( calendario );
 
-        calendario = new Calendario("Nike", "8", "fev/22", R.drawable.image5);
+        calendario = new Calendario("Adidas Yeezy", "25", "fev/22", R.drawable.image6);
         this.listaCalendario.add( calendario );
 
-        calendario = new Calendario("Adidas", "8", "fev/22", R.drawable.image6);
+        calendario = new Calendario("Nike Dunk Low Light Violet", "7", "mar/22", R.drawable.airmax1);
+        this.listaCalendario.add( calendario );
+
+        calendario = new Calendario("NBA x Nike Dunk Low Chicago", "8", "mar/22", R.drawable.imagem1);
+        this.listaCalendario.add( calendario );
+
+        calendario = new Calendario("Nike Air Max 90 Siempre Familia", "15", "mar/22", R.drawable.imagem2);
+        this.listaCalendario.add( calendario );
+
+        calendario = new Calendario("NBA x Nike Dunk Low Chicago", "18", "mar/22", R.drawable.imagem3);
+        this.listaCalendario.add( calendario );
+
+        calendario = new Calendario("Tênis legal", "23", "mar/22", R.drawable.image4);
+        this.listaCalendario.add( calendario );
+
+        calendario = new Calendario("Adidas Yeezy", "8", "fev/22", R.drawable.image6);
         this.listaCalendario.add( calendario );
 
     }

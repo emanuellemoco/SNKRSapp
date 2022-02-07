@@ -44,16 +44,41 @@ public class FeedActivity extends AppCompatActivity {
 
 
     public void prepararPostagens(){
-        Postagem p = new Postagem("Mocha", "R$ 1.000,00", "40", R.drawable.jordanmocha);
+        Postagem p = new Postagem("Air Jordan Bubble Gun", "R$ 1.500,00", "38", R.drawable.slider2);
+        this.postagens.add( p );
+
+        p = new Postagem("Mocha", "R$ 1.500,00", "40", R.drawable.jordanmocha);
         this.postagens.add(p);
 
-        p = new Postagem("Outro tenis", "R$ 2.000,00", "40", R.drawable.feed1);
+        p = new Postagem("Air Jordan 1", "R$ 2.000,00", "37", R.drawable.feed1);
         this.postagens.add( p );
 
-        p = new Postagem("Mais um tenis legal", "R$ 1.500,00", "41", R.drawable.feed2);
+        p = new Postagem("Dunk Easter 2022", "R$ 1.500,00", "45", R.drawable.feed2);
         this.postagens.add( p );
-        p = new Postagem("la la la ala ", "R$ 2.000,00", "40", R.drawable.feed3);
+
+        p = new Postagem("Yeezy Slider", "R$ 700,00", "36", R.drawable.feed3);
         this.postagens.add( p );
+
+        p = new Postagem("Air Max", "R$ 700,00", "41", R.drawable.airmax1);
+        this.postagens.add( p );
+
+        p = new Postagem("Mocha", "R$ 1.000,00", "40", R.drawable.jordanmocha);
+        this.postagens.add(p);
+
+        p = new Postagem("Air Jordan 1", "R$ 2.000,00", "30", R.drawable.feed1);
+        this.postagens.add( p );
+
+        p = new Postagem("Dunk Easter 2022", "R$ 1.500,00", "41", R.drawable.feed2);
+        this.postagens.add( p );
+
+        p = new Postagem("Yeezy Slider", "R$ 700,00", "40", R.drawable.feed3);
+        this.postagens.add( p );
+
+        p = new Postagem("Air Jordan 1", "R$ 2.000,00", "30", R.drawable.slider1);
+        this.postagens.add( p );
+
+
+
     }
 
 

@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -63,7 +64,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showAlertDialog(View view){
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            EditText campoEmail = findViewById(R.id.editEmail);
+            String email = campoEmail.getText().toString();
+
+
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
             alert.setTitle("E-mail");
             alert.setMessage("Você aceita os termos de uso?");
             alert.setIcon(android.R.drawable.ic_dialog_info);
@@ -78,8 +83,14 @@ public class MainActivity extends AppCompatActivity {
             alert.setNegativeButton("Sim", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(MainActivity.this, "E-mail cadastrado", Toast.LENGTH_SHORT).show();
-            }
+                if (email.length() == 0) {
+                    Log.d("STATE", "VAZIOOOO" );
+                    Toast.makeText(MainActivity.this, "E-mail inválido", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(MainActivity.this, "E-mail cadastrado", Toast.LENGTH_SHORT).show();
+                }
+                }
         });
         alert.create().show();
 
@@ -88,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
 //    public void sendEmail(View view){
 //        EditText campoEmail = findViewById(R.id.editEmail);
 //
-//        String email = campoEmail.getText().toString();
 //
 //        campoEmail.setText(" ");
 ////        campoEmail.setHint("Digite o seu E-mail"); //nao funciona
